@@ -1,3 +1,10 @@
+if ($.trim($("#name, #email, #tel, #gender, #subject, #message").val()) === "") {
+    $('#contactForm').submit(function(e) {
+        e.preventDefault();
+        alert('you did not fill out one of the fields');
+    })
+} 
+
 // $(function () {
 
 //     $("#contactForm input, #contactForm textarea").jqBootstrapValidation({

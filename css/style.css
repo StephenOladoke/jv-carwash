@@ -83,7 +83,7 @@ a:focus {
     right: 15px;
     bottom: 15px;
     transition: .5s;
-    background: #7FBCD2;
+    background: rgb(241,97,34);
     border-radius: 44px;
     z-index: 9;
 }
@@ -233,13 +233,16 @@ a:focus {
 .nav-bar .btn.btn-custom {
     color: #202C45;
     background: #ffffff;
-    box-shadow: inset 0 0 0 0 #52b5ed;
+    /* box-shadow: inset 0 0 0 0 #52b5ed; */
+    box-shadow: inset 0 0 0 0 rgb(241,97,34);
 }
 
 .nav-bar .btn:hover {
     color: #ffffff;
-    background: #52b5ed;
-    box-shadow: inset 200px 0 0 0 #52b5ed;
+    /* background: #52b5ed; */
+    background: rgb(241,97,34);
+    /* box-shadow: inset 200px 0 0 0 #52b5ed; */
+    box-shadow: inset 200px 0 0 0 rgb(241,97,34);
 }
 
 @media (min-width: 992px) {
@@ -477,7 +480,9 @@ a:focus {
     margin-bottom: 45px;
     padding: 90px 0;
     text-align: center;
-    background: #52b5ed;
+    /* background: #52b5ed; */
+    /* background: rgb(241,97,34); */
+    background: #202C45;
     border-top: 1px dotted #ffffff;
 }
 
@@ -669,6 +674,72 @@ a:focus {
     color: rgb(241,97,34);
 }
 
+/* Price Table Start */
+/* body{
+	margin:0;
+	padding:20px;
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+} */
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+    background: rgb(241,97,34);
+    background: rgb(28,43,91);
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+/* Price Table Ends */
+
 /*******************************/
 /********* Service CSS *********/
 /*******************************/
@@ -738,7 +809,8 @@ a:focus {
 .facts .facts-item i {
     margin-top: 15px;
     font-size: 45px;
-    color: #52b5ed;
+    /* color: #52b5ed; */
+    color: rgba(241,97,34);
 }
 
 .facts .facts-text {
@@ -907,7 +979,8 @@ a:focus {
 .location .location-item i {
     padding-top: 3px;
     font-size: 30px;
-    color: #52b5ed;
+    /* color: #52b5ed; */
+    color: rgb(241,97,34);
 }
 
 .location .location-text {
@@ -930,7 +1003,7 @@ a:focus {
 
 .location .location-form {
     padding: 45px 30px;
-    background: #52b5ed;
+    background: rgb(28,43,91);
     border-radius: 5px;
 }
 
@@ -1023,13 +1096,13 @@ a:focus {
     width: 100%;
     padding: 35px 30px 30px 30px;
     text-align: center;
-    background: #52b5ed;
+    background: rgb(28,43,91);
     border-radius: 0 0 5px 5px;
     transition: .5s;
 }
 
 .team .team-item:hover .team-text {
-    background: #52b5ed;
+    background: #202C45;
 }
 
 .team .team-text h2 {
@@ -1064,7 +1137,7 @@ a:focus {
     text-align: center;
     font-size: 16px;
     color: #ffffff;
-    background: #52b5ed;
+    background: rgb(241,97,34);
     border-radius: 40px;
     transition: .5s;
 }
@@ -1137,7 +1210,7 @@ a:focus {
     font-size: 25px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: #52b5ed;
+    color: rgb(28,43,91);
     margin-right: 10px;
 }
 
@@ -1156,7 +1229,7 @@ a:focus {
 }
 
 .testimonial .owl-dot.active {
-    background: #52b5ed;
+    background: rgb(241,97,34);
 }
 
 
@@ -1168,7 +1241,7 @@ a:focus {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #52b5ed;
+    background: rgb(28,43,91);
 }
 
 .footer .footer-contact,

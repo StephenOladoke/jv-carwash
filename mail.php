@@ -19,3 +19,8 @@ if($email!=NULL){
 //redirect
 header("Location:thankyou.html");
 ?>
+
+sky blue #52b5ed
+orange rgb(241,97,34)
+deep #202C45
+lighter deep rgb(28,43,91)
