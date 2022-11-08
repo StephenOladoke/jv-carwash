@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="top-bar-text">
                                         <h3>Call Us</h3>
-                                        <p>079 198 90 00</p>
+                                        <p>043 511 80 90</p>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                     </div>
                                     <div class="top-bar-text">
                                         <h3>Email Us</h3>
-                                        <p>info@example.com</p>
+                                        <p>info@jevisions.ch</p>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="service.html" class="nav-item nav-link">Service</a>
                             <!-- <a href="price.html" class="nav-item nav-link">Price</a> -->
-                            <a href="location.html" class="nav-item nav-link">Washing Points</a>
+                            <!-- <a href="location.html" class="nav-item nav-link">Washing Points</a> -->
                             <a href="contact.html" class="nav-item nav-link active">Contact</a>
                         </div>
                         <!-- <div class="ml-auto">
@@ -124,13 +124,13 @@
         <div class="contact">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Get In Touch</p>
-                    <h2>Contact for any query</h2>
+                    <p>Appointment Form</p>
+                    <h2>For Bookings:</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
+                 <div class="row">
+                   <div class="col-md-4">
                         <div class="contact-info">
-                            <!-- <h2>Quick Contact Info</h2> -->
+                             <h2>Get In Touch</h2> 
                             <div class="contact-info-item">
                                 <div class="contact-info-icon">
                                     <i class="far fa-clock"></i>
@@ -146,7 +146,7 @@
                                 </div>
                                 <div class="contact-info-text">
                                     <h3>Call Us</h3>
-                                    <p>079 198 90 00</p>
+                                    <p>043 511 80 90</p>
                                 </div>
                             </div>
                             <div class="contact-info-item">
@@ -155,16 +155,74 @@
                                 </div>
                                 <div class="contact-info-text">
                                     <h3>Email Us</h3>
-                                    <p>info@example.com</p>
+                                    <p>info@jevisions.ch</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div class="col-md-7">
                         <div class="contact-form">
                             <div id="success"></div>
+                            <form action="https://formspree.io/f/maykpvyp" method="post">
+                                <div class="elem-group">
+                                  <label for="name">Your Name</label>
+                                  <input type="text" id="name" name="Name" placeholder="Full Name" pattern=[A-Z\sa-z]{3,20} required>
+                                </div>
+                                <div class="elem-group">
+                                  <label for="email">Your E-mail</label>
+                                  <input type="email" id="email" name="Email" placeholder="youremail@email.com" required>
+                                </div>
+                                <div class="elem-group">
+                                  <label for="phone">Your Phone</label>
+                                  <!-- <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required> -->
+                                  <input type="tel" id="phone" name="Phone Number" placeholder="12345678" required>
+                                </div>
+                                <!-- <div class="elem-group inlined">
+                                  <label for="adult">Adults</label>
+                                  <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                                </div>
+                                <div class="elem-group inlined">
+                                  <label for="child">Children</label>
+                                  <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                                </div> -->
+
+                                <div class="elem-group inlined">
+                                    <label for="room-selection">Gender</label>
+                                    <select id="room-selection" name="Gender" required>
+                                        <option value="">Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="elem-group inlined">
+                                  <label for="checkin-date">Appointment Date</label>
+                                  <input type="date" id="checkin-date" name="Appointment Date" required>
+                                </div>
+                                
+                                <!-- <div class="elem-group inlined">
+                                  <label for="checkout-date">Check-out Date</label>
+                                  <input type="date" id="checkout-date" name="checkout" required>
+                                </div> -->
+                                <div class="elem-group">
+                                <label for="room-selection"><hr>Select Choice Of Services</label>
+                                  <select id="room-selection" name="Client Preferred Service" required>
+                                      <option value="">Services</option>
+                                      <option value="Chassis Washing">Chassis Washing</option>
+                                      <option value="Engine Washing">Engine Washing</option>
+                                      <option value="Inside Cleaning">Inside Cleaning</option>
+                                      <option value="Polishing">Polishing</option>
+
+                                  </select>
+                                </div>
+                                <hr>
+                                <div class="elem-group">
+                                  <label for="message">Anything Else?</label>
+                                  <textarea id="message" name="Message" placeholder="Tell us anything else that might be important." required></textarea>
+                                </div>
+                                <button class="btn btn-custom" type="submit">Book Now</button>
+                              </form>
                             <!-- <form action="https://formsubmit.co/28522e587b296cabdd4e2a61bc8d63be" method="post" name="sentMessage" id="contactForm" novalidate="novalidate"> -->
-                            <form action="https://formspree.io/f/maykpvyp" method="post" name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <!-- <form action="https://formspree.io/f/maykpvyp" method="post" name="sentMessage" id="contactForm" novalidate="novalidate">
 
                                 <div class="control-group">
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"  data-validation-required-message="Please enter your name" required/>
@@ -193,7 +251,7 @@
                                 <div>
                                     <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
                                 </div>
-                            </form>
+                            </form> -->
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -214,26 +272,26 @@
                         <div class="footer-contact">
                             <h2>Get In Touch</h2>
                             <p><i class="fa fa-map-marker-alt"></i>Brestenuhlstrasse 54, 8182 Hochfelder</p>
-                            <p><i class="fa fa-phone-alt"></i>079 198 90 00</p>
+                            <!-- <p><i class="fa fa-phone-alt"></i>079 198 90 00</p> -->
                             <p><i class="fa fa-phone-alt"></i>043 511 80 90</p>
-                            <p><i class="fa fa-envelope"></i>info@example.com</p>
+                            <p><i class="fa fa-envelope"></i>info@jevisions.ch</p>
                             <div class="footer-social">
-                                <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <!-- <a class="btn" href=""><i class="fab fa-twitter"></i></a> -->
+                                <a class="btn" href="https://www.facebook.com/100085501453822/"><i class="fab fa-facebook-f"></i></a>
+                                <!-- <a class="btn" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn" href=""><i class="fab fa-instagram"></i></a> -->
+                                <a class="btn" href="https://www.linkedin.com/company/jeevisions/"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Popular Links</h2>
-                            <a href="">About Us</a>
-                            <a href="">Contact Us</a>
-                            <a href="">Our Service</a>
-                            <a href="">Service Points</a>
-                            <a href="">Pricing Plan</a>
+                            <a href="about.html">About Us</a>
+                            <a href="service.html">Our Service</a>
+                            <a href="contact.html">Contact Us</a>
+                            <!-- <a href="">Service Points</a> -->
+                            <!-- <a href="">Pricing Plan</a> -->
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
