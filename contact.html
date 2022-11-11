@@ -217,8 +217,13 @@
                                       <option value="Polishing">Polishing (2hrs)</option>
                                   </select>
                                   <!-- <h6 style="color: #ff0000;"><i>For multiple selections, kindly press the ctrl button and select</i></h6> -->
-                                </div>
+                                </div>           
                                 <hr>
+                                <div class="elem-group">
+                                    <label for="phone">Address:</label>
+                                    <!-- <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required> -->
+                                    <input type="address" id="Address" name="Address" placeholder="Your Location" required>
+                                  </div>
                                 <div class="elem-group">
                                   <label for="message">Anything Else?</label>
                                   <textarea id="message" name="Message" placeholder="Tell us anything else that might be important." required></textarea>
