@@ -196,7 +196,7 @@
                                     </select>
                                 </div>
                                 <div class="elem-group inlined">
-                                  <label for="checkin-date">Appointment Date</label>
+                                  <label for="checkin-date" min="2022-11-20">Appointment Date</label>
                                   <input type="date" id="checkin-date" required>
                                 </div>
                                 
@@ -211,10 +211,10 @@
                                 <label for="room-selection"><hr>Select Choice Of Service</label>
                                   <select id="room-selection" multiple data-selected-text-format="count > 3" name="Client Preferred Service" required>
                                       <!-- <option value="">Services</option> -->
-                                      <option value="Chassis Washing">Chassis Washing</option>
-                                      <option value="Engine Washing">Engine Washing</option>
-                                      <option value="Inside Cleaning">Inside Cleaning</option>
-                                      <option value="Polishing">Polishing</option>
+                                      <option value="Chassis Washing">Chassis Washing</option><span>1hr15</span>
+                                      <option value="Engine Washing">Engine Washing</option><span>30minutes</span>
+                                      <option value="Inside Cleaning">Inside Cleaning</option><span>1hr30</span>
+                                      <option value="Polishing">Polishing</option><span>2hrs</span>
                                   </select>
                                   <!-- <h6 style="color: #ff0000;"><i>For multiple selections, kindly press the ctrl button and select</i></h6> -->
                                 </div>
